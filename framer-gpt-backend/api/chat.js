@@ -13,7 +13,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await openai.chat.completions.create({
-      model: "assistant:asst_WQiIiK3jIukwi1CViLvvWAST", // 👈 Use your custom model/assistant ID here
+      model: "asst_WQiIiK3jIukwi1CViLvvWAST", // 👈 Use your custom model/assistant ID here
       messages: [{ role: "user", content: userMessage }],
     });
 
